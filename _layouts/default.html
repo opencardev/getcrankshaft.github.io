@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
+		<title>{{ site.title }}</title>
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<a href="{{ site.baseurl }}/">{% include logo.html %}</a>
+			</div>
+		</nav>
+		<div class="content">
+			{{ content }}
+		</div>
+		<p class="copyright">
+			<a href="https://cloudcannon.com/">Template by CloudCannon</a>. Made with love from Raleigh, NC, USA. 2018.
+		</p>
+	</body>
+</html>

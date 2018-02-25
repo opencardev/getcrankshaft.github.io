@@ -1,1 +1,71 @@
-theme: jekyll-theme-cayman
+# ----
+# Site
+
+title: "crankshaft: raspberry pi + android auto + free software + love."
+url: https://getcrankshaft.com
+baseurl:
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /images/crankshaft-logo.png
+description: "Raspberry Pi 💖 Android Auto"
+author:
+  name: Huan Truong
+  email:
+  twitter: huant
+social:
+  name: "Huan Truong's Pensieve"
+  links:
+    - https://tnhh.net
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  staff_members:
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+plugins:
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880
