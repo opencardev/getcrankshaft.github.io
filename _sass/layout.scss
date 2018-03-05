@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-header {
+header, nav {
 	padding-bottom: 50px;
 
 	@media #{$desktop} {
@@ -15,13 +15,8 @@ header {
 			display: flex;
 		}
 
-		.column {
-			flex: 1;
-
-			img {
-				max-width: none;
-				width: 120%;
-			}
+		.logo {
+			flex: 2;
 
 			&:first-child {
 				display: flex;
@@ -30,12 +25,47 @@ header {
 				margin-right: 50px;
 			}
 		}
+
+		.menu {
+			flex: 3;
+			padding-top: 0.5em;
+
+		}
+
 	}
 
 	img {
-		margin: 100px auto 0 auto;
 		display: block;
-		max-width: 100%;
+		max-width: none;
+	}
+
+	.logo {
+	}
+	.menu {
+			ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			}
+
+			li {
+			    display: inline;
+			}
+
+			a {
+			    display: inline-block;
+			    padding: 1em;
+			    text-decoration: none;
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    color: darkgreen;
+			    border-bottom: 1px solid green;
+			    margin-right: 1em;
+			}
+
+			a:hover {
+				background-color: lightgreen;
+			}
 	}
 }
 
