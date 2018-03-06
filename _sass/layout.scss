@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-header, nav {
+nav {
 	padding-bottom: 50px;
 
 	@media #{$desktop} {
@@ -34,13 +34,11 @@ header, nav {
 
 	}
 
-	img {
-		display: block;
-		max-width: none;
-	}
+
 
 	.logo {
 	}
+
 	.menu {
 			ul {
 			    list-style-type: none;
@@ -66,6 +64,38 @@ header, nav {
 			a:hover {
 				background-color: lightgreen;
 			}
+	}
+}
+
+header {
+	padding-bottom: 50px;
+
+	@media #{$desktop} {
+		.container {
+			display: flex;
+		}
+
+		.column {
+			flex: 1;
+
+			img {
+				max-width: none;
+				width: 100%;
+			}
+
+			&:first-child {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 50px;
+			}
+		}
+	}
+
+	img {
+		margin: 0 auto;
+		display: block;
+		max-width: 100%;
 	}
 }
 
